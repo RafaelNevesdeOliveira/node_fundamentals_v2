@@ -1,16 +1,11 @@
 import fastify from 'fastify'
-import { knex } from './database'
 import { env } from './env/index'
+import { transactionsRoutes } from './routes/transactions'
 
 const app = fastify()
 
-// sqlite_schema --> tabela padrao
-app.get('/hello', async () => {
-  const transaction = await knex('transactions')
-    .where('amount', 1000)
-    .select('*')
-
-  return transaction
+app.register(transactionsRoutes, {
+  prefix: 'transactions',
 })
 
 app
