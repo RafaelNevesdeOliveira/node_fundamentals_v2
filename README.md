@@ -10,13 +10,18 @@
 
 # RF
 
-- [ ] 0 usuário deve poder criar uma nova transação;
-- [ ] 0 usuário deve poser obter um resumo da sua conta;
-- [ ] 0 usuário deve poder listar todas transações que já ocorreram;
-- [ ] 0 usuario deve poder visualizar uma transagao inica;
+- [x] 0 usuário deve poder criar uma nova transação;
+- [x] 0 usuário deve pode obter um resumo da sua conta;
+- [x] 0 usuário deve poder listar todas transações que já ocorreram;
+- [x] 0 usuario deve poder visualizar uma transagao inica;
 
 # RN
 
-- [ ] A transação pode ser do tipo crédito que somará ao valor total, ou débito subtraira
+- [x] A transação pode ser do tipo crédito que somará ao valor total, ou débito subtraira
 - [ ] Deve ser possível identificarmos o usuário entre as requisições;
 - [ ] 0 usuário só pode visualizar transações o qual ele
+
+```js
+// pacote do fastify para cookies
+npm i @fastify/cookie    
+```
