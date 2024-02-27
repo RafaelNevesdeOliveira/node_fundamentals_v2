@@ -7,7 +7,6 @@ if (process.env.NODE_ENV === 'test') {
   config()
 }
 
-// QUAL FORMATO DAS VARIAVEIS DE AMBIENTE
 const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'test', 'production']).default('production'),
   DATABASE_CLIENT: z.enum(['sqlite', 'pg']).default('sqlite'),
